@@ -29,6 +29,6 @@ root_path="$(dirname "$exe")/$root_file"
 cp "$root_path" "$outdir/$root_file"
 echo "[$(date)] Rendering event display"
 python3 /home/reriosto/SHiP/event_display_ej204_ej230/render_event_display.py \
-  "$outdir/$root_file" "$outdir/event_full.png" 0
+  "$outdir/$root_file" "$outdir" 0
 
-echo "[$(date)] Complete: $outdir/event_full.png"
+echo "[$(date)] Complete: $outdir/event_full.png and $outdir/event_zoom.png"

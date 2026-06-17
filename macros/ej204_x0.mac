@@ -21,7 +21,7 @@
 /vis/scene/endOfEventAction accumulate 1
 /vis/viewer/set/projection orthogonal
 /vis/viewer/set/viewpointThetaPhi 70 20
-/vis/viewer/set/autoRefresh false
+/vis/viewer/set/autoRefresh true
 /gun/particle mu-
 /gun/energy 1 GeV
 /gun/position 0 0 60 mm
@@ -30,3 +30,5 @@
 /muon/angle 0
 /random/setSeeds 13581 24682
 /run/beamOn 1
+/vis/viewer/refresh
+/vis/viewer/flush
