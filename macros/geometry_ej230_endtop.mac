@@ -1,0 +1,24 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/det/scintillator OPSC-106
+/det/readout EndTop
+/sipm/model AFBR-S4N66P024M
+/run/initialize
+/vis/open OGLSQt 1600x900-0+0
+/vis/viewer/set/background white
+/vis/drawVolume
+/vis/scene/add/axes 0 0 0 200 mm
+/vis/scene/add/eventID
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 1
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton cyan
+/vis/modeling/trajectories/drawByParticleID-0/set mu- red
+/vis/modeling/trajectories/drawByParticleID-0/set e- yellow
+/vis/modeling/trajectories/drawByParticleID-0/set gamma green
+/vis/scene/endOfEventAction accumulate 1
+/vis/viewer/set/projection orthogonal
+/vis/viewer/set/viewpointThetaPhi 70 20
+/vis/viewer/zoom 1.0

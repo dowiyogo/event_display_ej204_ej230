@@ -1,0 +1,36 @@
+# ============================================================
+# run.mac — standard production run
+# Usage: ./ej200_bar_sim -m macros/run.mac
+# ============================================================
+
+/control/verbose 0
+/run/verbose     0
+/event/verbose   0
+/tracking/verbose 0
+
+# ── Detector geometry/material/sensor ────────────────────────
+# /det/readout EndTop
+# /det/scintillator OPSC-101
+# /sipm/model AFBR-S4N66P024M
+
+/run/initialize
+
+# ── SiPM electronics ─────────────────────────────────────────
+# Electronic time-jitter sigma (default: 20 ps = 0.020 ns)
+#/sipm/jitterSigma 0.020 ns
+
+# ── Muon gun ─────────────────────────────────────────────────
+/gun/particle  mu-
+/gun/energy    1 GeV
+
+# Option A — direct position + vertical incidence (default)
+/muon/angle    0
+/muon/gunX     0 mm
+
+# Option B — midpoint between two top SiPMs (uncomment to use)
+# /muon/midpointSiPMs 34 35
+
+# Option C — tilted muon (angle in degrees from -Z vertical)
+# /muon/angle 30
+
+/run/beamOn 1000

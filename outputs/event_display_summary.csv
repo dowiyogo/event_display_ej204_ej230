@@ -1,0 +1,7 @@
+detector,variant,output_dir,png_exists,png_size_kb
+ej204,xm690,/home/reriosto/SHiP/event_display_ej204_ej230/outputs/ej204/xm690,OK,414.0068359375
+ej204,xm400,/home/reriosto/SHiP/event_display_ej204_ej230/outputs/ej204/xm400,OK,416.1337890625
+ej204,x0,/home/reriosto/SHiP/event_display_ej204_ej230/outputs/ej204/x0,OK,419.1923828125
+ej230,xm690,/home/reriosto/SHiP/event_display_ej204_ej230/outputs/ej230/xm690,OK,412.8955078125
+ej230,xm400,/home/reriosto/SHiP/event_display_ej204_ej230/outputs/ej230/xm400,OK,415.8642578125
+ej230,x0,/home/reriosto/SHiP/event_display_ej204_ej230/outputs/ej230/x0,OK,418.5908203125

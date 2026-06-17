@@ -1,0 +1,16 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/det/scintillator OPSC-101
+/det/readout EndTop
+/sipm/model AFBR-S4N66P024M
+/run/initialize
+/gun/particle mu-
+/gun/energy 1 GeV
+/gun/position 0 0 60 mm
+/gun/direction 0 0 -1
+/muon/gunX -690 mm
+/muon/angle 0
+/random/setSeeds 13579 24680
+/run/beamOn 1

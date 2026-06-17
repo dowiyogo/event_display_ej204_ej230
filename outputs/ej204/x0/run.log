@@ -1,0 +1,259 @@
+
+**************************************************************
+ Geant4 version Name: geant4-11-04 [MT]   (5-December-2025)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Accumulable registered as "NEndLeft"
+Accumulable registered as "NEndRight"
+Accumulable registered as "NTop"
+Accumulable registered as "NEventsWithHits"
+Accumulable registered as "NScintPhotons"
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : mat031
+      issued by : G4Material::FillVectors()
+For material opsc-101 sum of fractional masses 0.996667 is not 1 - results may be wrong
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume BarPV:0 (G4Box) ... OK! 
+Checking overlaps for volume ReflectorYMinusPV:0 (G4Box) ... OK! 
+Checking overlaps for volume ReflectorZMinusPV:3 (G4Box) ... OK! 
+Checking overlaps for volume ReflectorZPlusPV:4 (G4Box) ... OK! 
+Checking overlaps for volume ReflectorYPlusPV:5 (G4SubtractionSolid) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:0 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:8 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:1 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:9 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:2 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:10 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:3 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:11 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:4 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:12 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:5 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:13 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:6 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:14 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMLeft_PV:7 (G4Box) ... OK! 
+Checking overlaps for volume EndSiPMRight_PV:15 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:16 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:17 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:18 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:19 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:20 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:21 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:22 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:23 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:24 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:25 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:26 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:27 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:28 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:29 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:30 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:31 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:32 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:33 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:34 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:35 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:36 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:37 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:38 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:39 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:40 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:41 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:42 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:43 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:44 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:45 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:46 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:47 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:48 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:49 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:50 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:51 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:52 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:53 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:54 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:55 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:56 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:57 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:58 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:59 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:60 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:61 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:62 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:63 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:64 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:65 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:66 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:67 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:68 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:69 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:70 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:71 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:72 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:73 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:74 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:75 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:76 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:77 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:78 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:79 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:80 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:81 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:82 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:83 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:84 (G4Box) ... OK! 
+Checking overlaps for volume TopSiPMPV:85 (G4Box) ... OK! 
+### Birks coefficients used in run time
+G4WT4 > Accumulable registered as "NEndLeft"
+G4WT4 > Accumulable registered as "NEndRight"
+G4WT4 > Accumulable registered as "NTop"
+G4WT4 > Accumulable registered as "NEventsWithHits"
+G4WT4 > Accumulable registered as "NScintPhotons"
+G4WT7 > Accumulable registered as "NEndLeft"
+G4WT7 > Accumulable registered as "NEndRight"
+G4WT7 > Accumulable registered as "NTop"
+G4WT7 > Accumulable registered as "NEventsWithHits"
+G4WT7 > Accumulable registered as "NScintPhotons"
+G4WT10 > Accumulable registered as "NEndLeft"
+G4WT10 > Accumulable registered as "NEndRight"
+G4WT2 > Accumulable registered as "NEndLeft"
+G4WT2 > Accumulable registered as "NEndRight"
+G4WT15 > Accumulable registered as "NEndLeft"
+G4WT1 > Accumulable registered as "NEndLeft"
+G4WT1 > Accumulable registered as "NEndRight"
+G4WT8 > Accumulable registered as "NEndLeft"
+G4WT8 > Accumulable registered as "NEndRight"
+G4WT3 > Accumulable registered as "NEndLeft"
+G4WT3 > Accumulable registered as "NEndRight"
+G4WT3 > Accumulable registered as "NTop"
+G4WT3 > Accumulable registered as "NEventsWithHits"
+G4WT6 > Accumulable registered as "NEndLeft"
+G4WT6 > Accumulable registered as "NEndRight"
+G4WT10 > Accumulable registered as "NTop"
+G4WT10 > Accumulable registered as "NEventsWithHits"
+G4WT2 > Accumulable registered as "NTop"
+G4WT15 > Accumulable registered as "NEndRight"
+G4WT14 > Accumulable registered as "NEndLeft"
+G4WT1 > Accumulable registered as "NTop"
+G4WT13 > Accumulable registered as "NEndLeft"
+G4WT8 > Accumulable registered as "NTop"
+G4WT5 > Accumulable registered as "NEndLeft"
+G4WT11 > Accumulable registered as "NEndLeft"
+G4WT9 > Accumulable registered as "NEndLeft"
+G4WT3 > Accumulable registered as "NScintPhotons"
+G4WT0 > Accumulable registered as "NEndLeft"
+G4WT6 > Accumulable registered as "NTop"
+G4WT12 > Accumulable registered as "NEndLeft"
+G4WT10 > Accumulable registered as "NScintPhotons"
+G4WT2 > Accumulable registered as "NEventsWithHits"
+G4WT15 > Accumulable registered as "NTop"
+G4WT14 > Accumulable registered as "NEndRight"
+G4WT1 > Accumulable registered as "NEventsWithHits"
+G4WT13 > Accumulable registered as "NEndRight"
+G4WT8 > Accumulable registered as "NEventsWithHits"
+G4WT5 > Accumulable registered as "NEndRight"
+G4WT11 > Accumulable registered as "NEndRight"
+G4WT9 > Accumulable registered as "NEndRight"
+G4WT0 > Accumulable registered as "NEndRight"
+G4WT0 > Accumulable registered as "NTop"
+G4WT12 > Accumulable registered as "NEndRight"
+G4WT2 > Accumulable registered as "NScintPhotons"
+G4WT15 > Accumulable registered as "NEventsWithHits"
+G4WT14 > Accumulable registered as "NTop"
+G4WT14 > Accumulable registered as "NEventsWithHits"
+G4WT13 > Accumulable registered as "NTop"
+G4WT8 > Accumulable registered as "NScintPhotons"
+G4WT5 > Accumulable registered as "NTop"
+G4WT11 > Accumulable registered as "NTop"
+G4WT11 > Accumulable registered as "NEventsWithHits"
+G4WT6 > Accumulable registered as "NEventsWithHits"
+G4WT6 > Accumulable registered as "NScintPhotons"
+G4WT12 > Accumulable registered as "NTop"
+G4WT15 > Accumulable registered as "NScintPhotons"
+G4WT1 > Accumulable registered as "NScintPhotons"
+G4WT14 > Accumulable registered as "NScintPhotons"
+G4WT13 > Accumulable registered as "NEventsWithHits"
+G4WT5 > Accumulable registered as "NEventsWithHits"
+G4WT5 > Accumulable registered as "NScintPhotons"
+G4WT11 > Accumulable registered as "NScintPhotons"
+G4WT0 > Accumulable registered as "NEventsWithHits"
+G4WT12 > Accumulable registered as "NEventsWithHits"
+G4WT12 > Accumulable registered as "NScintPhotons"
+G4WT9 > Accumulable registered as "NTop"
+G4WT0 > Accumulable registered as "NScintPhotons"
+G4WT13 > Accumulable registered as "NScintPhotons"
+G4WT9 > Accumulable registered as "NEventsWithHits"
+G4WT9 > Accumulable registered as "NScintPhotons"
+
+=== Active Scintillator Baseline ===
+  SSLG4 code            : OPSC-101
+  Yield                 : 10400 ph/MeV
+  Rise time tau_r       : 0.7 ns
+  Decay time tau_d      : 1.8 ns
+  Attenuation length    : 160 cm
+  Emission peak lambda  : 408.8 nm
+  Finite rise time      : enabled
+=====================================
+
+=== Active Readout / Wrapping Configuration ===
+  Readout configuration : EndTop
+  SiPM model            : AFBR-S4N66P024M
+  SiPM PDE file         : /home/reriosto/SHiP/ej200/data/sipm/AFBR-S4N66P024M_pde.txt
+  -X face               : instrumented
+  +X face               : instrumented
+  -Y face               : wrapped
+  +Y face               : instrumented
+  -Z face               : wrapped
+  +Z face               : wrapped
+  Reflector R           : 0.98
+  Active End SiPMs      : 16 (L=8, R=8)
+  Active Top SiPMs      : 70
+==============================================
+G4WT13 > 
+=== EJ Scintillator Bar Run Summary ===
+  Run ID                : 0
+  Events run            : 1
+  Events with ≥1 hit    : 1
+  End-left  photons     : 187
+  End-right photons     : 175
+  Top SiPM  photons     : 4231
+  Scint photons generated: 19119
+  Total photons detected : 4593
+  Detection efficiency   : 24.0232 %
+  ROOT output           : photon_hits_run000.root
+==============================
+
+
+=== EJ Scintillator Bar Run Summary ===
+  Run ID                : 0
+  Events run            : 1
+  Events with ≥1 hit    : 1
+  End-left  photons     : 187
+  End-right photons     : 175
+  Top SiPM  photons     : 4231
+  Scint photons generated: 19119
+  Total photons detected : 4593
+  Detection efficiency   : 24.0232 %
+  ROOT output           : photon_hits_run000.root
+==============================
+
+
+=== Boundary Census (diagnostic) ===
+  Bar -> reflector panel   : 344263
+  Bar -> World (escaped)   : 570
+  Bar -> Bar (TIR/refl)    : 0
+  Bar -> SiPM (entering)   : 7420
+  Killed in WorldLV        : 610
+====================================
+
