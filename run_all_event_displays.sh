@@ -10,6 +10,8 @@ MACRO_DIR="$ROOT_DIR/macros"
 SUMMARY_DIR="$ROOT_DIR/summary"
 OUTPUT_DIR="$ROOT_DIR/outputs"
 GEOM_DIR="$OUTPUT_DIR/geometry"
+RENDERER="$ROOT_DIR/render_event_display.py"
+CASE_RUNNER="$ROOT_DIR/batch_run_case.sh"
 
 mkdir -p "$EJ204_BUILD" "$EJ230_BUILD" "$SUMMARY_DIR" "$OUTPUT_DIR" "$GEOM_DIR"
 
@@ -46,8 +48,10 @@ run_geometry() {
   "$ROOT_DIR/run_case.sh" "$exe" "$macro" "$outdir"
 }
 
-run_geometry "$EJ204_BUILD/ej200_bar_sim" "$MACRO_DIR/geometry_ej204_endtop.mac" "$GEOM_DIR/ej204"
-run_geometry "$EJ230_BUILD/ej200_bar_sim" "$MACRO_DIR/geometry_ej230_endtop.mac" "$GEOM_DIR/ej230"
+if [[ "${RUN_GEOMETRY:-0}" == "1" ]]; then
+  run_geometry "$EJ204_BUILD/ej200_bar_sim" "$MACRO_DIR/geometry_ej204_endtop.mac" "$GEOM_DIR/ej204"
+  run_geometry "$EJ230_BUILD/ej200_bar_sim" "$MACRO_DIR/geometry_ej230_endtop.mac" "$GEOM_DIR/ej230"
+fi
 
 if [[ $# -eq 2 ]]; then
   cases=("$1:$2")
@@ -72,14 +76,14 @@ for case in "${cases[@]}"; do
   rm -f "$case_dir/photon_hits_run000.root"
   if [[ "$material" == "ej204" ]]; then
     exe="$EJ204_BUILD/ej200_bar_sim"
-    macro="$MACRO_DIR/ej204_${name}.mac"
+    macro="$MACRO_DIR/batch_ej204_${name}.mac"
   else
     exe="$EJ230_BUILD/ej200_bar_sim"
-    macro="$MACRO_DIR/ej230_${name}.mac"
+    macro="$MACRO_DIR/batch_ej230_${name}.mac"
   fi
   [[ -x "$exe" ]]
   [[ -f "$macro" ]]
-  "$ROOT_DIR/run_case.sh" "$exe" "$macro" "$case_dir"
+  "$CASE_RUNNER" "$exe" "$macro" "$case_dir"
 done
 
 python3 "$ROOT_DIR/check_outputs.py" --summarize
