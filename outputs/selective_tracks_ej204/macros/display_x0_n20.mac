@@ -1,0 +1,47 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/run/numberOfThreads 1
+/random/setSeeds 13581 24682
+/det/scintillator OPSC-101
+/det/readout EndTop
+/sipm/model AFBR-S4N66P024M
+/run/initialize
+/display/maxOpticalTrajectories 20
+/display/storeMuon true
+/display/storeOtherParticles false
+/sipm/jitterSigma 0 ns
+
+/vis/open OGLSQt 1600x900-0+0
+/vis/viewer/set/background white
+/vis/drawVolume
+/vis/viewer/set/style wireframe
+/vis/geometry/set/forceSolid BarLV 0 false
+/vis/geometry/set/forceWireframe BarLV 0 true
+/vis/scene/add/axes 0 0 0 200 mm
+/vis/scene/add/eventID
+/tracking/storeTrajectory 1
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set mu- red
+/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton cyan
+/vis/modeling/trajectories/drawByParticleID-0/set e- yellow
+/vis/modeling/trajectories/drawByParticleID-0/set gamma green
+/vis/scene/endOfEventAction accumulate 1
+/vis/viewer/set/projection perspective
+/vis/viewer/set/viewpointThetaPhi 65 25
+/vis/viewer/set/targetPoint 0 0 0 mm
+/vis/viewer/set/autoRefresh true
+
+/gun/particle mu-
+/gun/energy 1 GeV
+/gun/position 0 0 60 mm
+/gun/direction 0 0 -1
+/muon/gunX 0 mm
+/muon/angle 0
+
+/run/beamOn 1
+/vis/viewer/refresh
+/vis/viewer/flush

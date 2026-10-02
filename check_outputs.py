@@ -70,9 +70,9 @@ def preflight() -> int:
 def parse_log(path: Path) -> dict[str, int]:
     text = path.read_text(errors="replace")
     patterns = {
-        "events_run": r"Events run\s+:\s+(\d+)",
-        "scint_photons_generated": r"Scint photons generated:\s+(\d+)",
-        "photons_detected_total": r"Total photons detected\s+:\s+(\d+)",
+        "events_run": r"Events run\s*[:=]\s*(\d+)",
+        "scint_photons_generated": r"Scint photons generated\s*[:=]\s*(\d+)",
+        "photons_detected_total": r"Total photons detected\s*[:=]\s*(\d+)",
         "photons_end_left": r"End-left\s+photons\s+:\s+(\d+)",
         "photons_end_right": r"End-right\s+photons\s+:\s+(\d+)",
         "photons_top": r"Top SiPM\s+photons\s+:\s+(\d+)",
@@ -89,7 +89,7 @@ def validate_root(root_path: Path, gun_x: int) -> tuple[int, int, float, float, 
         if "sipm_hits" not in f:
             return 0, 0, 0.0, 0.0, "missing-tree"
         tree = f["sipm_hits"]
-        arrays = tree.arrays(["event_id", "gun_x_mm"], library="np")
+        arrays = tree.arrays(["event_id", "gun_x_mm", "x_mm", "y_mm", "z_mm"], library="np")
         event_ids = arrays["event_id"]
         gun_x_vals = arrays["gun_x_mm"]
         unique_event_ids = len(set(int(v) for v in event_ids.tolist()))
@@ -124,7 +124,13 @@ def summarize() -> int:
             print(f"Missing outputs for {material}/{name}", file=sys.stderr)
             return 3
         log_data = parse_log(paths["log"])
+        if log_data["events_run"] != 1 or log_data["scint_photons_generated"] <= 0 or log_data["photons_detected_total"] <= 0:
+            print(f"Run-log validation failed for {material}/{name}", file=sys.stderr)
+            return 4
         entries, unique_event_ids, gun_min, gun_max, status = validate_root(paths["root"], x_mm)
+        if status != "ok":
+            print(f"ROOT validation failed for {material}/{name}", file=sys.stderr)
+            return 5
         rows.append(
             CaseResult(
                 material=material,

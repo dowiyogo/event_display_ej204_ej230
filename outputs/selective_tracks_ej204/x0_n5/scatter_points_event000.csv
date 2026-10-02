@@ -1,0 +1,11 @@
+event_id,track_id,interaction_order,status,status_class,marker_label,x_mm,y_mm,z_mm
+0,1767,1,SpikeReflection,reflection,scatter1,0.153006,0.070867,5.000000
+0,1767,2,StepTooSmall,other,scatter2,0.153006,0.070867,5.000000
+0,1768,1,SpikeReflection,reflection,scatter1,-19.303278,8.211176,-5.000000
+0,1768,2,StepTooSmall,other,scatter2,-19.303278,8.211176,-5.000000
+0,1769,1,SpikeReflection,reflection,scatter1,-3.648651,1.645979,-5.000000
+0,1769,2,StepTooSmall,other,scatter2,-3.648651,1.645979,-5.000000
+0,1770,1,SpikeReflection,reflection,scatter1,-20.121299,17.701747,-5.000000
+0,1770,2,StepTooSmall,other,scatter2,-20.121299,17.701747,-5.000000
+0,1771,1,SpikeReflection,reflection,scatter1,0.223482,-0.014930,5.000000
+0,1771,2,StepTooSmall,other,scatter2,0.223482,-0.014930,5.000000

@@ -1,0 +1,29 @@
+# Repository status snapshot
+
+## feat/endtop-sslg4...origin/feat/endtop-sslg4 [ahead 5]
+?? runs/
+
+## feat/ej230-sslg4...origin/feat/ej230-sslg4 [ahead 1]
+
+## fix/readout-wrapping-config...origin/fix/readout-wrapping-config
+
+## feat/endonly-mylar...origin/feat/endonly-mylar [ahead 10]
+ M presentation/endonly_mylar/main.tex
+?? analysis/bootstrap_attenuation
+?? presentation/endonly_mylar/main.fdb_latexmk
+?? presentation/endonly_mylar/main.fls
+?? presentation/endonly_mylar/main.synctex.gz
+?? presentation/endonly_mylar/main_corrected.synctex.gz
+?? presentation/endonly_mylar/main_corrected.tex
+
+## feat/ej230-endonly-mylar...origin/feat/ej230-endonly-mylar [ahead 1]
+ M presentation/endonly_mylar_ej230/main.tex
+?? presentation/endonly_mylar_ej230/main.fdb_latexmk
+?? presentation/endonly_mylar_ej230/main.fls
+?? presentation/endonly_mylar_ej230/main.synctex.gz
+
+## main...origin/main [ahead 1]
+ M analysis/__pycache__/render_figures.cpython-312.pyc
+?? EXEC_14_guia_slide_por_slide_ampliada.md
+?? outputs/fig04_ej230.png
+?? outputs/fig06_ej230.png

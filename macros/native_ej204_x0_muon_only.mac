@@ -1,0 +1,35 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/control/macroPath ..
+/det/scintillator OPSC-101
+/det/readout EndTop
+/sipm/model AFBR-S4N66P024M
+/run/numberOfThreads 1
+/run/initialize
+/vis/open OGLSQt 1600x900-0+0
+/vis/viewer/set/background white
+/vis/viewer/set/style wireframe
+/vis/drawVolume
+/vis/scene/add/axes 0 0 0 200 mm
+/vis/scene/add/eventID
+/tracking/storeTrajectory 1
+/vis/modeling/trajectories/create/drawByParticleID MuonOnlyByParticleID
+/vis/modeling/trajectories/MuonOnlyByParticleID/set mu- red
+/vis/modeling/trajectories/MuonOnlyByParticleID/default/setDrawStepPts true
+/vis/filtering/trajectories/create/particleFilter muOnly
+/vis/filtering/trajectories/muOnly/add mu-
+/vis/scene/add/trajectories smooth
+/vis/scene/endOfEventAction accumulate 1
+/vis/viewer/set/autoRefresh true
+/gun/particle mu-
+/gun/energy 1 GeV
+/gun/position 0 0 60 mm
+/gun/direction 0 0 -1
+/muon/gunX 0 mm
+/muon/angle 0
+/random/setSeeds 13581 24682
+/run/beamOn 1
+/vis/viewer/refresh
+/vis/viewer/flush
